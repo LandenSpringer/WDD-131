@@ -58,10 +58,10 @@ footer {
     justify-content: right;
     gap: 1rem;
   }
-
-  nav a {
-    display: block;
-  }
+/* 
+  nav.active {
+    display:block;
+  } */
 
   .menu-btn {
     display: none;
