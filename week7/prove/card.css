@@ -153,20 +153,42 @@ input {
 }
 
 @media (max-width: 600px) {
-    .form-grid {
-        grid-template-columns: 1fr;
+
+    body {
+        padding: 20px;
     }
 
-    .front, .back {
-        grid-column: 1;
+    .form-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        position: static;
+    }
+
+    .front,
+    .back {
+        grid-column: auto;
         grid-row: auto;
+        z-index: auto;
+    }
+
+    .back {
+        margin-top: 10px;
     }
 
     button {
-        grid-column: 1;
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
     }
 
     #message {
-        grid-column: 1;
+        text-align: center;
+        margin-top: 5px;
     }
+
 }
