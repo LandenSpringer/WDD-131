@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Credit Card Grid</title>
+    <link rel="stylesheet" href="card.css">
+    <link rel="icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="card.js" defer></script>
+</head>
+
+<body>
+
+    <div class="form-grid">
+
+        <div class="card front">
+
+            <div class="total">TOTAL: $199</div>
+            <div class="card-icon">💳</div>
+
+            <label for="cardNumber">CARD NUMBER</label>
+            <input type="text" id="cardNumber" maxlength="16" placeholder="1234123412341234">
+
+            <label for="cardHolder">CARD HOLDER</label>
+            <input type="text" id="cardHolder" placeholder="John Doe">
+
+            <label id="expirationDate">EXPIRATION</label>
+            <div id="cardExpiration">
+                <input type="text" id="month" placeholder="MM" maxlength="2" aria-labelledby="expirationDate">
+                <input type="text" id="year" placeholder="YY" maxlength="2" aria-labelledby="expirationDate">
+            </div>
+
+        </div>
+
+        <div class="card back">
+            <div class="black-strip"></div>
+
+            <div class="cvc-box">
+                <label for="cvc">CVC/CVV</label>
+                <input type="text" id="cvc" maxlength="3" placeholder="xxx">
+            </div>
+        </div>
+
+        <button id="submitBtn">Submit</button>
+        <p id="message"></p>
+
+    </div>
+</body>
+
+</html>
