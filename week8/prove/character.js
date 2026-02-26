@@ -2,7 +2,7 @@
 
 const character = {
     name: "Snortlecat",
-    class: "idk yet",
+    class: "evil fluffball",
     level: 6,
     health: 100,
     image: "snortlecat.png",
