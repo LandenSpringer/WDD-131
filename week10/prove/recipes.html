@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipebook</title>
+    <meta name="description" content="Find a recipe and explore tasty ideas." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="recipes.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <img class="brand-icon" src="images/recipe-book.png" alt="Recipe book icon" />
+            <h1 class="brand-title">Recipebook</h1>
+        </div>
+
+        <form class="search" id="searchForm" role="search">
+            <label class="sr-only" for="recipeSearch">Find a recipe</label>
+            <input id="recipeSearch" type="search" placeholder="Find a recipe" name="q" />
+            <button type="submit" aria-label="Search">
+                <img src="images/search.svg" alt="" />
+            </button>
+        </form>
+    </header>
+
+    <hr class="divider" />
+
+    <main class="content" id="recipeContainer">
+        <!-- loads dynamically -->
+    </main>
+
+    <footer class="site-footer">
+        <a class="attrib" href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
+            Recipe icons created by Freepik - Flaticon
+        </a>
+
+        <div class="social">
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon" /></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon" /></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon" /></a>
+        </div>
+    </footer>
+
+    <script src="recipes.js"></script>
+</body>
+
+</html>
