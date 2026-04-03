@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #525666;
+  --secondary: #7AAA70;
+  --accent: #F7CB64;
+  --light: #E5EAE9;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--light);
+  color: var(--primary);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ccc;
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.container {
+  padding: 20px;
+}
+
+.intro {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background: #ccc;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* this is on the checker page */
+.checker {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.checker input {
+  width: 80%;
+  max-width: 400px;
+  padding: 15px;
+  border-radius: 40px;
+  border: 1px solid #888;
+  background: #bbb;
+  font-size: 16px;
+  outline: none;
+}
+
+#strengthText {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container {
+    max-width: 900px;
+    margin: auto;
+  }
+}
