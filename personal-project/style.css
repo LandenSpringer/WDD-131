@@ -15,9 +15,12 @@ body {
   font-family: Arial, sans-serif;
   background: var(--light);
   color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.header {
+header.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,6 +41,7 @@ body {
 
 .container {
   padding: 20px;
+  flex: 1;
 }
 
 .intro {
@@ -64,10 +68,9 @@ body {
   background: #ccc;
   text-align: center;
   padding: 15px;
-  margin-top: 20px;
+  margin-top: auto; 
 }
 
-/* this is on the checker page */
 .checker {
   text-align: center;
   margin: 30px 0;
